@@ -1,5 +1,5 @@
 class Order
-  attr_accessor :book, :reader, :date
+  attr_reader :book, :reader, :date
   def initialize(book, reader, date)
     @book = book
     @reader = reader
