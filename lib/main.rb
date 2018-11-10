@@ -1,10 +1,4 @@
-require './library.rb'
-require './entities/author.rb'
-require './entities/book.rb'
-require './entities/order.rb'
-require './entities/reader.rb'
-require 'date'
-
+require './autoload.rb'
 puts 'Please, enter the path with name to library file'
 puts '(for skip, please, press Enter):'
 lib_file = $stdin.gets.chomp.to_s
