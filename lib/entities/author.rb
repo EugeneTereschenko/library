@@ -5,10 +5,6 @@ class Author
     @biography = biography
   end
 
-  def hash
-    [@name, @biography].hash
-  end
-
   def to_s
     "#{@name}\nbiography: #{@biography}"
   end

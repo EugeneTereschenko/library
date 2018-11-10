@@ -9,10 +9,6 @@ class Reader
     @house = house
   end
 
-  def hash
-    [@name, @email, @city, @street, @house].hash
-  end
-
   def to_s
     "#{@name} mail: #{@email} city: #{@city} street: #{@street} house #{@house}"
   end

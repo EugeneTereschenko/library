@@ -5,10 +5,6 @@ class Book
     @author = author
   end
 
-  def hash
-    [@title, @author].hash
-  end
-
   def to_s
     "title: #{@title}\nauthor: #{@author}"
   end

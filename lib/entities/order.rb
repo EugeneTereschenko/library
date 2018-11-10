@@ -6,10 +6,6 @@ class Order
     @date = date
   end
 
-  def hash
-    [@book, @reader, @date].hash
-  end
-
   def to_s
     "#{@book}\nreader: #{@reader}\ndate: #{@date}"
   end
