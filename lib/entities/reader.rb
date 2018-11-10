@@ -1,4 +1,3 @@
-# Entity for reader
 class Reader
   attr_accessor :name, :email, :city, :street, :house
 

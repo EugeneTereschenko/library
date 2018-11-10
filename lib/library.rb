@@ -1,4 +1,3 @@
-# set values of library
 class Library
   attr_accessor :authors, :books, :readers, :orders
 

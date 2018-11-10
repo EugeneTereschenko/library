@@ -1,4 +1,3 @@
-# Entity for book
 class Book
   attr_writer :title, :author
   def initialize(title, author)

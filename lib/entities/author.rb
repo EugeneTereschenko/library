@@ -1,4 +1,3 @@
-# Entity for author
 class Author
   attr_writer :name, :biography
   def initialize(name, biography)

@@ -1,5 +1,3 @@
-require 'yaml'
-# write or read yaml file
 class Db
   DEFAULT_PATH_TO_FILE = 'database.yml'.freeze
 
