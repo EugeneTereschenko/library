@@ -29,17 +29,18 @@ class Library
   end
 
   def top_reader(quantity = 1)
-    hash = Hash.new(0)
-    @orders.each { |order| hash[order.reader] += 1 }
-
-    hash.sort_by { |_, num_reader| -num_reader }.first(quantity).to_h
+    top_value(:reader, quantity);
   end
 
   def most_popular_books(quantity = 1)
-    hash = Hash.new(0)
-    @orders.each { |order| hash[order.book] += 1 }
+    top_value(:book, quantity);
+  end
 
-    hash.sort_by { |_, num_reader| -num_reader }.first(quantity).to_h
+  def top_value(param, quantity = 1)
+    hash = Hash.new(0)
+    @orders.each { |order| hash[order.send(param)] += 1 }
+
+    hash.sort_by { |_, num_param| -num_param }.first(quantity).to_h
   end
 
   def num_most_popular_book(quantity = 3)
