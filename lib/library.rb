@@ -11,20 +11,17 @@ class Library
     @orders = @library_data ? @orders = @library_data.orders : []
   end
 
-  def add_author(author)
-    @authors << author
-  end
-
-  def add_book(book)
-    @books << book
-  end
-
-  def add_reader(reader)
-    @readers << reader
-  end
-
-  def add_order(order)
-    @orders << order
+  def add(obj)
+    case obj
+    when Author
+      @authors << obj
+    when Book
+      @books << obj
+    when Reader
+      @readers << obj
+    when Order
+      @orders << obj
+    end
   end
 
   def top_reader(quantity = 1)
