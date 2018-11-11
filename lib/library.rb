@@ -2,8 +2,12 @@ class Library
   attr_accessor :authors, :books, :readers, :orders
 
   def initialize(path_file)
-    @database_interceptor = Db.new(path_file)
-    @library_data = @database_interceptor.read_database
+    @db = Db.new(path_file)
+    read_data
+  end
+
+  def read_data
+    @library_data = @db.read_database
 
     @authors = @library_data ? @library_data.authors : []
     @books = @library_data ? @library_data.books : []
@@ -49,6 +53,6 @@ class Library
   end
 
   def save
-    @database_interceptor.write_database(self)
+    @db.write_database(self)
   end
 end
