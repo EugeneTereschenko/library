@@ -32,14 +32,14 @@ class Library
     hash = Hash.new(0)
     @orders.each { |order| hash[order.reader] += 1 }
 
-    hash.sort_by { |_k, v| v }.reverse.first(quantity).to_h
+    hash.sort_by { |_, num_reader| -num_reader }.first(quantity).to_h
   end
 
   def most_popular_books(quantity = 1)
     hash = Hash.new(0)
     @orders.each { |order| hash[order.book] += 1 }
 
-    hash.sort_by { |_k, v| v }.reverse.first(quantity).to_h
+    hash.sort_by { |_, num_reader| -num_reader }.first(quantity).to_h
   end
 
   def num_most_popular_book(quantity = 3)
