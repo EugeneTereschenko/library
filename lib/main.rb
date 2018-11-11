@@ -1,6 +1,6 @@
 require './autoload.rb'
 puts 'Please, enter the path with name to library file'
-puts '(for skip, please, press Enter):'
+puts '(if you skip, it will use default file "database.yml"):'
 lib_file = $stdin.gets.chomp.to_s
 
 library = Library.new(lib_file)
