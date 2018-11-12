@@ -1,22 +1,19 @@
 class Book
+  include Validation
   attr_reader :title, :author
   def initialize(title:, author:)
     @title = title
     @author = author
-    validate?
+    validate
   end
 
   def to_s
     "title: #{@title}\nauthor: #{@author}"
   end
 
-  def validate?
-    unless /\w/ =~ @title
-      raise ValidationError.new('Empty title')
-    end
-    if @author.nil?
-      raise ValidationError.new('Not valid author')
-    end
+  def validate
+    validate_s(@title)
+    validate_o(@author, Author)
   end
 
 end
