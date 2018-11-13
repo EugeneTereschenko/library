@@ -1,5 +1,5 @@
 class Library
-  attr_accessor :authors, :books, :readers, :orders
+  attr_reader :authors, :books, :readers, :orders
 
   def initialize(path_file)
     @db = Db.new(path_file)
