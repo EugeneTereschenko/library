@@ -17,14 +17,11 @@ class Library
 
   def add(obj)
     case obj
-    when Author
-      @authors << obj
-    when Book
-      @books << obj
-    when Reader
-      @readers << obj
-    when Order
-      @orders << obj
+    when Author then @authors << obj
+    when Book then @books << obj
+    when Reader then @readers << obj
+    when Order then @orders << obj
+     else raise ValidationError.new
     end
   end
 
