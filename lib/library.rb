@@ -35,7 +35,7 @@ class Library
 
   def top_value(param, quantity = 1)
     hash = Hash.new(0)
-    @orders.each { |order| hash[order.send(param)] += 1 }
+    @orders.each { |order| hash[order.public_send(param)] += 1 }
 
     hash.sort_by { |_, num_param| -num_param }.first(quantity).to_h
   end
