@@ -1,7 +1,4 @@
---- !ruby/object:Generator
-db: !ruby/object:Db
-  path_to_file: database.yml
-library_data: false
+--- !ruby/object:Library
 authors:
 - &1 !ruby/object:Author
   name: Mark Twain
@@ -72,40 +69,40 @@ orders:
 - !ruby/object:Order
   book: *6
   reader: *7
-  date: 2018-11-13 23:13:32.039313559 +02:00
+  date: 2018-11-13 23:24:16.103883001 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-13 23:13:32.039351844 +02:00
+  date: 2018-11-13 23:24:16.103919182 +02:00
 - !ruby/object:Order
   book: *6
   reader: *10
-  date: 2018-11-13 23:13:32.039369690 +02:00
+  date: 2018-11-13 23:24:16.103934415 +02:00
 - !ruby/object:Order
   book: *11
   reader: *10
-  date: 2018-11-13 23:13:32.039385624 +02:00
+  date: 2018-11-13 23:24:16.103947431 +02:00
 - !ruby/object:Order
   book: *11
   reader: *9
-  date: 2018-11-13 23:13:32.039400262 +02:00
+  date: 2018-11-13 23:24:16.103960788 +02:00
 - !ruby/object:Order
   book: *11
   reader: *12
-  date: 2018-11-13 23:13:32.039413907 +02:00
+  date: 2018-11-13 23:24:16.103972742 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-13 23:13:32.039440925 +02:00
+  date: 2018-11-13 23:24:16.103996744 +02:00
 - !ruby/object:Order
   book: *13
   reader: *14
-  date: 2018-11-13 23:13:32.039456529 +02:00
+  date: 2018-11-13 23:24:16.104011219 +02:00
 - !ruby/object:Order
   book: *15
   reader: *7
-  date: 2018-11-13 23:13:32.039468709 +02:00
+  date: 2018-11-13 23:24:16.104025234 +02:00
 - !ruby/object:Order
   book: *13
   reader: *9
-  date: 2018-11-13 23:13:32.039476692 +02:00
+  date: 2018-11-13 23:24:16.104038259 +02:00

@@ -3,8 +3,8 @@ require 'time'
 class Generator
   attr_reader :authors, :books, :readers, :orders
 
-  def initialize(path_file)
-    @db = Db.new(path_file)
+  def initialize(db)
+    @db = db
   end
 
   def read_data
@@ -15,7 +15,6 @@ class Generator
     @readers = @library_data ? @readers = @library_data.readers : []
     @orders = @library_data ? @orders = @library_data.orders : []
   end
-
 
   def generate
     r1 = Reader.new(name: 'Smith', email: 'smith@smith.com', city: 'New York City', street: 'Avenue C', house: '523')
@@ -73,10 +72,6 @@ class Generator
     orders << o9
     o10 = Order.new(book: b5, reader: r2, date: Time.new)
     orders << o10
-  end
-
-  def save
-    @db.write_database(self)
   end
 
 end
