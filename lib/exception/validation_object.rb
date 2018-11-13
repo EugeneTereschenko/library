@@ -1,0 +1,3 @@
+class WrongObjectError < RuntimeError
+  
+end
