@@ -12,8 +12,8 @@ class Book
   end
 
   def validate
-    validate_s(@title)
-    validate_o(@author, Author)
+    validate_string(@title)
+    validate_object(@author, Author)
   end
 
 end

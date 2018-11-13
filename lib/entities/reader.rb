@@ -15,11 +15,11 @@ class Reader
   end
 
   def validate
-    validate_s(@name)
-    validate_s(@email)
-    validate_s(@city)
-    validate_s(@street)
-    validate_s(@house)
+    validate_string(@name)
+    validate_string(@email)
+    validate_string(@city)
+    validate_string(@street)
+    validate_house(@house)
   end
 
 end

@@ -1,15 +1,12 @@
 module Validation
-  def validate_o(obj, cl)
-    if obj.nil?
-      raise ValidationError.new('Empty obj')
-    end
-    unless obj.is_a?(cl)
-      raise ValidationError.new('Wrong class obj')      
-    end
+  def validate_object(obj, klass)
+      raise WrongObjectError unless obj.is_a?(klass)    
   end
-  def validate_s(s)
-    unless /\w/ =~ s
-      raise ValidationError.new('Wrong string s')
-    end
+  def validate_string(s)
+      raise WrongStringError     unless /\w/ =~ s
+  end
+  #validate house number, which can include integers and letters. Example, 7 A, 62 K
+  def validate_house(s)
+      raise WrongHouseError unless /^[a-zA-Z0-9 _.-]*$/ =~ s
   end
 end

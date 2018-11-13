@@ -13,9 +13,9 @@ class Order
   end
 
   def validate
-    validate_o(@date, Time)
-    validate_o(@book, Book)
-    validate_o(@reader, Reader)
+    validate_object(@date, Time)
+    validate_object(@book, Book)
+    validate_object(@reader, Reader)
   end
 
 end
