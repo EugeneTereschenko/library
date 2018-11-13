@@ -1,18 +1,10 @@
 class Library
   attr_reader :authors, :books, :readers, :orders
-
-  def initialize(path_file)
-    @db = Db.new(path_file)
-    read_data
-  end
-
-  def read_data
-    @library_data = @db.read_database
-
-    @authors = @library_data ? @library_data.authors : []
-    @books = @library_data ? @library_data.books : []
-    @readers = @library_data ? @readers = @library_data.readers : []
-    @orders = @library_data ? @orders = @library_data.orders : []
+  def initialize(authors:, books:, readers:, orders:)
+    @authors = authors
+    @books = books
+    @readers = readers
+    @orders = orders
   end
 
   def add(obj)
@@ -21,16 +13,16 @@ class Library
     when Book then @books << obj
     when Reader then @readers << obj
     when Order then @orders << obj
-     else raise ValidationError.new
+    else raise ValidationError
     end
   end
 
   def top_reader(quantity = 1)
-    top_value(:reader, quantity);
+    top_value(:reader, quantity)
   end
 
   def most_popular_books(quantity = 1)
-    top_value(:book, quantity);
+    top_value(:book, quantity)
   end
 
   def top_value(param, quantity = 1)
@@ -48,9 +40,5 @@ class Library
 
     books_orders.each { |order| reader_book_num[order.book] += 1 }
     reader_book_num
-  end
-
-  def save
-    @db.write_database(self)
   end
 end

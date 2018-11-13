@@ -1,111 +1,221 @@
---- !ruby/object:Library
+--- !ruby/object:Generator
 db: !ruby/object:Db
   path_to_file: database.yml
-library_data: false
-authors:
-- &1 !ruby/object:Author
-  name: Mark Twain
-  biography: American writer was born in 1835
-- &2 !ruby/object:Author
-  name: Marcel Arland
-  biography: French writer was born in 1899
-- &3 !ruby/object:Author
-  name: Bajza József
-  biography: Hungarian was born in 1804
-- &4 !ruby/object:Author
-  name: Baroti Szabo David
-  biography: Romania was born in 1739
-- &5 !ruby/object:Author
-  name: Michael hartl
-  biography: Austria was born in 1949
-books:
-- &6 !ruby/object:Book
-  title: The Adventures of Huckleberry Finn
-  author: *1
-- &8 !ruby/object:Book
-  title: Étienne
-  author: *2
-- &15 !ruby/object:Book
-  title: Un nouveau mal du siècle
-  author: *2
-- &11 !ruby/object:Book
-  title: Világtörténet
-  author: *3
-- &13 !ruby/object:Book
-  title: Paradise Lost
-  author: *4
-- !ruby/object:Book
-  title: RUBY ON RAILS TUTORIAL
-  author: *5
-readers:
-- &7 !ruby/object:Reader
-  name: Smith
-  email: smith@smith.com
-  city: New York City
-  street: Avenue C
-  house: '523'
-- &9 !ruby/object:Reader
-  name: John
-  email: John@mail.com
-  city: Manchester
-  street: King Street
-  house: '345'
-- &10 !ruby/object:Reader
-  name: joseph
-  email: joseph@mail.com
-  city: Berlin
-  street: Chausseestraße
-  house: '623'
-- &14 !ruby/object:Reader
-  name: Joe
-  email: Joe@mail.com
-  city: Warsaw
-  street: Jerusalem Avenue
-  house: '7'
-- &12 !ruby/object:Reader
-  name: Ivan
-  email: Ivan@email.com
-  city: Dnipro
-  street: Naberezhnaya Pobedy
-  house: '58'
-orders:
-- !ruby/object:Order
-  book: *6
-  reader: *7
-  date: 2018-11-13 11:50:58.802760081 +02:00
-- !ruby/object:Order
-  book: *8
-  reader: *9
-  date: 2018-11-13 11:50:58.802789015 +02:00
-- !ruby/object:Order
-  book: *6
-  reader: *10
-  date: 2018-11-13 11:50:58.802800860 +02:00
-- !ruby/object:Order
-  book: *11
-  reader: *10
-  date: 2018-11-13 11:50:58.802809969 +02:00
-- !ruby/object:Order
-  book: *11
-  reader: *9
-  date: 2018-11-13 11:50:58.802818207 +02:00
-- !ruby/object:Order
-  book: *11
-  reader: *12
-  date: 2018-11-13 11:50:58.802834181 +02:00
-- !ruby/object:Order
-  book: *8
-  reader: *9
-  date: 2018-11-13 11:50:58.802842435 +02:00
-- !ruby/object:Order
-  book: *13
-  reader: *14
-  date: 2018-11-13 11:50:58.802850844 +02:00
-- !ruby/object:Order
-  book: *15
-  reader: *7
-  date: 2018-11-13 11:50:58.802859552 +02:00
-- !ruby/object:Order
-  book: *13
-  reader: *9
-  date: 2018-11-13 11:50:58.802867731 +02:00
+library_data: !ruby/object:Generator
+  db: !ruby/object:Db
+    path_to_file: database.yml
+  library_data: false
+  authors: &31
+  - &1 !ruby/object:Author
+    name: Mark Twain
+    biography: American writer was born in 1835
+  - &2 !ruby/object:Author
+    name: Marcel Arland
+    biography: French writer was born in 1899
+  - &3 !ruby/object:Author
+    name: Bajza József
+    biography: Hungarian was born in 1804
+  - &4 !ruby/object:Author
+    name: Baroti Szabo David
+    biography: Romania was born in 1739
+  - &5 !ruby/object:Author
+    name: Michael hartl
+    biography: Austria was born in 1949
+  - &6 !ruby/object:Author
+    name: Mark Twain
+    biography: American writer was born in 1835
+  - &7 !ruby/object:Author
+    name: Marcel Arland
+    biography: French writer was born in 1899
+  - &8 !ruby/object:Author
+    name: Bajza József
+    biography: Hungarian was born in 1804
+  - &9 !ruby/object:Author
+    name: Baroti Szabo David
+    biography: Romania was born in 1739
+  - &10 !ruby/object:Author
+    name: Michael hartl
+    biography: Austria was born in 1949
+  books: &32
+  - &11 !ruby/object:Book
+    title: The Adventures of Huckleberry Finn
+    author: *1
+  - &13 !ruby/object:Book
+    title: Étienne
+    author: *2
+  - &20 !ruby/object:Book
+    title: Un nouveau mal du siècle
+    author: *2
+  - &16 !ruby/object:Book
+    title: Világtörténet
+    author: *3
+  - &18 !ruby/object:Book
+    title: Paradise Lost
+    author: *4
+  - !ruby/object:Book
+    title: RUBY ON RAILS TUTORIAL
+    author: *5
+  - &21 !ruby/object:Book
+    title: The Adventures of Huckleberry Finn
+    author: *6
+  - &23 !ruby/object:Book
+    title: Étienne
+    author: *7
+  - &30 !ruby/object:Book
+    title: Un nouveau mal du siècle
+    author: *7
+  - &26 !ruby/object:Book
+    title: Világtörténet
+    author: *8
+  - &28 !ruby/object:Book
+    title: Paradise Lost
+    author: *9
+  - !ruby/object:Book
+    title: RUBY ON RAILS TUTORIAL
+    author: *10
+  readers: &33
+  - &12 !ruby/object:Reader
+    name: Smith
+    email: smith@smith.com
+    city: New York City
+    street: Avenue C
+    house: '523'
+  - &14 !ruby/object:Reader
+    name: John
+    email: John@mail.com
+    city: Manchester
+    street: King Street
+    house: '345'
+  - &15 !ruby/object:Reader
+    name: joseph
+    email: joseph@mail.com
+    city: Berlin
+    street: Chausseestraße
+    house: '623'
+  - &19 !ruby/object:Reader
+    name: Joe
+    email: Joe@mail.com
+    city: Warsaw
+    street: Jerusalem Avenue
+    house: '7'
+  - &17 !ruby/object:Reader
+    name: Ivan
+    email: Ivan@email.com
+    city: Dnipro
+    street: Naberezhnaya Pobedy
+    house: '58'
+  - &22 !ruby/object:Reader
+    name: Smith
+    email: smith@smith.com
+    city: New York City
+    street: Avenue C
+    house: '523'
+  - &24 !ruby/object:Reader
+    name: John
+    email: John@mail.com
+    city: Manchester
+    street: King Street
+    house: '345'
+  - &25 !ruby/object:Reader
+    name: joseph
+    email: joseph@mail.com
+    city: Berlin
+    street: Chausseestraße
+    house: '623'
+  - &29 !ruby/object:Reader
+    name: Joe
+    email: Joe@mail.com
+    city: Warsaw
+    street: Jerusalem Avenue
+    house: '7'
+  - &27 !ruby/object:Reader
+    name: Ivan
+    email: Ivan@email.com
+    city: Dnipro
+    street: Naberezhnaya Pobedy
+    house: '58'
+  orders: &34
+  - !ruby/object:Order
+    book: *11
+    reader: *12
+    date: 2018-11-13 14:50:45.415924748 +02:00
+  - !ruby/object:Order
+    book: *13
+    reader: *14
+    date: 2018-11-13 14:50:45.415958727 +02:00
+  - !ruby/object:Order
+    book: *11
+    reader: *15
+    date: 2018-11-13 14:50:45.415972198 +02:00
+  - !ruby/object:Order
+    book: *16
+    reader: *15
+    date: 2018-11-13 14:50:45.415982307 +02:00
+  - !ruby/object:Order
+    book: *16
+    reader: *14
+    date: 2018-11-13 14:50:45.415999590 +02:00
+  - !ruby/object:Order
+    book: *16
+    reader: *17
+    date: 2018-11-13 14:50:45.416008624 +02:00
+  - !ruby/object:Order
+    book: *13
+    reader: *14
+    date: 2018-11-13 14:50:45.416017537 +02:00
+  - !ruby/object:Order
+    book: *18
+    reader: *19
+    date: 2018-11-13 14:50:45.416026867 +02:00
+  - !ruby/object:Order
+    book: *20
+    reader: *12
+    date: 2018-11-13 14:50:45.416035841 +02:00
+  - !ruby/object:Order
+    book: *18
+    reader: *14
+    date: 2018-11-13 14:50:45.416044825 +02:00
+  - !ruby/object:Order
+    book: *21
+    reader: *22
+    date: 2018-11-13 15:10:30.518694262 +02:00
+  - !ruby/object:Order
+    book: *23
+    reader: *24
+    date: 2018-11-13 15:10:30.518737607 +02:00
+  - !ruby/object:Order
+    book: *21
+    reader: *25
+    date: 2018-11-13 15:10:30.518749289 +02:00
+  - !ruby/object:Order
+    book: *26
+    reader: *25
+    date: 2018-11-13 15:10:30.518759035 +02:00
+  - !ruby/object:Order
+    book: *26
+    reader: *24
+    date: 2018-11-13 15:10:30.518768615 +02:00
+  - !ruby/object:Order
+    book: *26
+    reader: *27
+    date: 2018-11-13 15:10:30.518777502 +02:00
+  - !ruby/object:Order
+    book: *23
+    reader: *24
+    date: 2018-11-13 15:10:30.518786452 +02:00
+  - !ruby/object:Order
+    book: *28
+    reader: *29
+    date: 2018-11-13 15:10:30.518795357 +02:00
+  - !ruby/object:Order
+    book: *30
+    reader: *22
+    date: 2018-11-13 15:10:30.518804553 +02:00
+  - !ruby/object:Order
+    book: *28
+    reader: *24
+    date: 2018-11-13 15:10:30.518813547 +02:00
+authors: *31
+books: *32
+readers: *33
+orders: *34
