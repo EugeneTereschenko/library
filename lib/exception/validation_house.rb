@@ -1,3 +1,0 @@
-class WrongHouseError < RuntimeError
-  
-end

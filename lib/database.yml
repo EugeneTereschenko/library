@@ -40,69 +40,69 @@ readers:
   email: smith@smith.com
   city: New York City
   street: Avenue C
-  house: '523'
+  house: 523
 - &9 !ruby/object:Reader
   name: John
   email: John@mail.com
   city: Manchester
   street: King Street
-  house: '345'
+  house: 345
 - &10 !ruby/object:Reader
   name: joseph
   email: joseph@mail.com
   city: Berlin
   street: Chausseestraße
-  house: '623'
+  house: 623
 - &14 !ruby/object:Reader
   name: Joe
   email: Joe@mail.com
   city: Warsaw
   street: Jerusalem Avenue
-  house: '7'
+  house: 7
 - &12 !ruby/object:Reader
   name: Ivan
   email: Ivan@email.com
   city: Dnipro
   street: Naberezhnaya Pobedy
-  house: '58'
+  house: 58
 orders:
 - !ruby/object:Order
   book: *6
   reader: *7
-  date: 2018-11-13 23:24:16.103883001 +02:00
+  date: 2018-11-14 22:30:23.249578594 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-13 23:24:16.103919182 +02:00
+  date: 2018-11-14 22:30:23.249606886 +02:00
 - !ruby/object:Order
   book: *6
   reader: *10
-  date: 2018-11-13 23:24:16.103934415 +02:00
+  date: 2018-11-14 22:30:23.249618357 +02:00
 - !ruby/object:Order
   book: *11
   reader: *10
-  date: 2018-11-13 23:24:16.103947431 +02:00
+  date: 2018-11-14 22:30:23.249627182 +02:00
 - !ruby/object:Order
   book: *11
   reader: *9
-  date: 2018-11-13 23:24:16.103960788 +02:00
+  date: 2018-11-14 22:30:23.249636219 +02:00
 - !ruby/object:Order
   book: *11
   reader: *12
-  date: 2018-11-13 23:24:16.103972742 +02:00
+  date: 2018-11-14 22:30:23.249653964 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-13 23:24:16.103996744 +02:00
+  date: 2018-11-14 22:30:23.249662081 +02:00
 - !ruby/object:Order
   book: *13
   reader: *14
-  date: 2018-11-13 23:24:16.104011219 +02:00
+  date: 2018-11-14 22:30:23.249670012 +02:00
 - !ruby/object:Order
   book: *15
   reader: *7
-  date: 2018-11-13 23:24:16.104025234 +02:00
+  date: 2018-11-14 22:30:23.249677887 +02:00
 - !ruby/object:Order
   book: *13
   reader: *9
-  date: 2018-11-13 23:24:16.104038259 +02:00
+  date: 2018-11-14 22:30:23.249685800 +02:00

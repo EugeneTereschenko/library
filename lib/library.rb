@@ -26,7 +26,7 @@ class Library
   end
 
   def top_value(param, quantity = 1)
-    raise ValidationError.new unless param==:book || param==:reader
+    raise ValidationError unless %i[book reader].include? param
     hash = Hash.new(0)
     @orders.each { |order| hash[order.public_send(param)] += 1 }
 

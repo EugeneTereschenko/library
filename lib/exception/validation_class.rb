@@ -1,0 +1,3 @@
+class WrongClassError < RuntimeError
+  
+end

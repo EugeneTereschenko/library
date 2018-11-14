@@ -17,15 +17,15 @@ class Generator
   end
 
   def generate
-    r1 = Reader.new(name: 'Smith', email: 'smith@smith.com', city: 'New York City', street: 'Avenue C', house: '523')
+    r1 = Reader.new(name: 'Smith', email: 'smith@smith.com', city: 'New York City', street: 'Avenue C', house: 523)
     @readers << r1
-    r2 = Reader.new(name: 'John', email: 'John@mail.com', city: 'Manchester', street: 'King Street', house: '345')
+    r2 = Reader.new(name: 'John', email: 'John@mail.com', city: 'Manchester', street: 'King Street', house: 345)
     @readers << r2
-    r3 = Reader.new(name: 'joseph', email: 'joseph@mail.com', city: 'Berlin', street: 'Chausseestraße', house: '623')
+    r3 = Reader.new(name: 'joseph', email: 'joseph@mail.com', city: 'Berlin', street: 'Chausseestraße', house: 623)
     @readers << r3
-    r4 = Reader.new(name: 'Joe', email: 'Joe@mail.com', city: 'Warsaw', street: 'Jerusalem Avenue', house: '7')
+    r4 = Reader.new(name: 'Joe', email: 'Joe@mail.com', city: 'Warsaw', street: 'Jerusalem Avenue', house: 7)
     @readers << r4
-    r5 = Reader.new(name: 'Ivan', email: 'Ivan@email.com', city: 'Dnipro', street: 'Naberezhnaya Pobedy', house: '58')
+    r5 = Reader.new(name: 'Ivan', email: 'Ivan@email.com', city: 'Dnipro', street: 'Naberezhnaya Pobedy', house: 58)
     @readers << r5
 
     a1 = Author.new(name: 'Mark Twain', biography: 'American writer was born in 1835')

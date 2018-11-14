@@ -19,7 +19,7 @@ class Reader
     validate_string(@email)
     validate_string(@city)
     validate_string(@street)
-    validate_house(@house)
+    validate_object(@house, Integer)
   end
 
 end
