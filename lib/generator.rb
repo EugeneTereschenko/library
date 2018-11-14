@@ -3,17 +3,12 @@ require 'time'
 class Generator
   attr_reader :authors, :books, :readers, :orders
 
-  def initialize(db)
-    @db = db
-  end
-
-  def read_data
-    @library_data = @db.read_database
-
-    @authors = @library_data ? @library_data.authors : []
-    @books = @library_data ? @library_data.books : []
-    @readers = @library_data ? @readers = @library_data.readers : []
-    @orders = @library_data ? @orders = @library_data.orders : []
+  def initialize(library_data)
+    @library_data = library_data
+    @authors = @library_data&.authors || []
+    @books = @library_data&.books || []
+    @readers = @library_data&.readers || []
+    @orders = @library_data&.orders || []
   end
 
   def generate

@@ -3,8 +3,8 @@ puts 'Please, enter the path with name to library file'
 puts '(if you skip, it will use default file "database.yml"):'
 lib_file = $stdin.gets.chomp.to_s
 db = Db.new(lib_file)
-generator = Generator.new(db)
-generator.read_data
+library_data = db.read_database
+generator = Generator.new(library_data)
 generator.generate
 
 library = Library.new(authors: generator.authors, books: generator.books, readers: generator.readers, orders: generator.orders)
