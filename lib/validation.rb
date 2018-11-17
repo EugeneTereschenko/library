@@ -1,4 +1,5 @@
 module Validation
+  
   def validate_object(object, klass)
       raise WrongClassError unless object.is_a?(klass)
   end

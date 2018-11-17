@@ -2,6 +2,8 @@ class Library
 
   attr_reader :authors, :books, :readers, :orders
 
+  ALLOWED_TYPES = %i[book reader]
+
   def initialize(authors:, books:, readers:, orders:)
     @authors = authors
     @books = books
@@ -28,11 +30,10 @@ class Library
   end
 
   def top_value(param, quantity = 1)
-    raise ValidationError unless %i[book reader].include? param
-    hash = Hash.new(0)
-    @orders.each { |order| hash[order.public_send(param)] += 1 }
+    raise ValidationError unless ALLOWED_TYPES.include? param
 
-    hash.sort_by { |_, num_param| -num_param }.first(quantity).to_h
+    orders_group_by = @orders.group_by{ |order| order.public_send(param) }.map{ |order, order_value| [order, order_value.size]}
+    orders_group_by.sort_by { |_, orders_quantity| -orders_quantity }.first(quantity).to_h
   end
 
   def num_most_popular_book(quantity = 3)
@@ -42,6 +43,6 @@ class Library
     reader_book_num = Hash.new(0)
 
     books_orders.each { |order| reader_book_num[order.book] += 1 }
-    reader_book_num
+    reader_book_num.values
   end
 end
