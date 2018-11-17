@@ -1,0 +1,108 @@
+--- !ruby/object:Library
+authors:
+- &1 !ruby/object:Author
+  name: Mark Twain
+  biography: American writer was born in 1835
+- &2 !ruby/object:Author
+  name: Marcel Arland
+  biography: French writer was born in 1899
+- &3 !ruby/object:Author
+  name: Bajza József
+  biography: Hungarian was born in 1804
+- &4 !ruby/object:Author
+  name: Baroti Szabo David
+  biography: Romania was born in 1739
+- &5 !ruby/object:Author
+  name: Michael hartl
+  biography: Austria was born in 1949
+books:
+- &6 !ruby/object:Book
+  title: The Adventures of Huckleberry Finn
+  author: *1
+- &8 !ruby/object:Book
+  title: Étienne
+  author: *2
+- &15 !ruby/object:Book
+  title: Un nouveau mal du siècle
+  author: *2
+- &11 !ruby/object:Book
+  title: Világtörténet
+  author: *3
+- &13 !ruby/object:Book
+  title: Paradise Lost
+  author: *4
+- !ruby/object:Book
+  title: RUBY ON RAILS TUTORIAL
+  author: *5
+readers:
+- &7 !ruby/object:Reader
+  name: Smith
+  email: smith@smith.com
+  city: New York City
+  street: Avenue C
+  house: 523
+- &9 !ruby/object:Reader
+  name: John
+  email: John@mail.com
+  city: Manchester
+  street: King Street
+  house: 345
+- &10 !ruby/object:Reader
+  name: joseph
+  email: joseph@mail.com
+  city: Berlin
+  street: Chausseestraße
+  house: 623
+- &14 !ruby/object:Reader
+  name: Joe
+  email: Joe@mail.com
+  city: Warsaw
+  street: Jerusalem Avenue
+  house: 7
+- &12 !ruby/object:Reader
+  name: Ivan
+  email: Ivan@email.com
+  city: Dnipro
+  street: Naberezhnaya Pobedy
+  house: 58
+orders:
+- !ruby/object:Order
+  book: *6
+  reader: *7
+  date: 2018-11-17 18:06:40.080171648 +02:00
+- !ruby/object:Order
+  book: *8
+  reader: *9
+  date: 2018-11-17 18:06:40.080197011 +02:00
+- !ruby/object:Order
+  book: *6
+  reader: *10
+  date: 2018-11-17 18:06:40.080209253 +02:00
+- !ruby/object:Order
+  book: *11
+  reader: *10
+  date: 2018-11-17 18:06:40.080246545 +02:00
+- !ruby/object:Order
+  book: *11
+  reader: *9
+  date: 2018-11-17 18:06:40.080262491 +02:00
+- !ruby/object:Order
+  book: *11
+  reader: *12
+  date: 2018-11-17 18:06:40.080271487 +02:00
+- !ruby/object:Order
+  book: *8
+  reader: *9
+  date: 2018-11-17 18:06:40.080279370 +02:00
+- !ruby/object:Order
+  book: *13
+  reader: *14
+  date: 2018-11-17 18:06:40.080287233 +02:00
+- !ruby/object:Order
+  book: *15
+  reader: *7
+  date: 2018-11-17 18:06:40.080295179 +02:00
+- !ruby/object:Order
+  book: *13
+  reader: *9
+  date: 2018-11-17 18:06:40.080303021 +02:00
