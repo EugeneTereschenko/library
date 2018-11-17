@@ -1,6 +1,9 @@
 class Order
+
   include Validation
+
   attr_reader :book, :reader, :date
+  
   def initialize(book:, reader:, date: Time.new)
     @book = book
     @reader = reader
@@ -17,5 +20,4 @@ class Order
     validate_object(@book, Book)
     validate_object(@reader, Reader)
   end
-
 end

@@ -1,6 +1,9 @@
 class Book
+
   include Validation
+
   attr_reader :title, :author
+  
   def initialize(title:, author:)
     @title = title
     @author = author
@@ -15,5 +18,4 @@ class Book
     validate_string(@title)
     validate_object(@author, Author)
   end
-
 end

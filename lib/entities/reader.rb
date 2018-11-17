@@ -1,6 +1,9 @@
 class Reader
+
   include Validation
+
   attr_reader :name, :email, :city, :street, :house
+  
   def initialize(name:, email:, city:, street:, house:)
     @name = name
     @email = email
@@ -21,5 +24,4 @@ class Reader
     validate_string(@street)
     validate_object(@house, Integer)
   end
-
 end

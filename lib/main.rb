@@ -15,4 +15,3 @@ puts "NUMBER OF READERS OF THE MOST POPULAR BOOKS\n"
 puts library.num_most_popular_book
 
 db.write_database(library)
-
