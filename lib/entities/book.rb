@@ -15,6 +15,7 @@ class Book
   end
 
   def validate
+    validate_object(@title, String)
     validate_string(@title)
     validate_object(@author, Author)
   end

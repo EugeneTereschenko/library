@@ -1,126 +1,114 @@
 --- !ruby/object:Library
 authors:
 - &1 !ruby/object:Author
-  name: Berneice Batz
-  biography: Inventore omnis nihil consequatur dolores voluptatem. Aspernatur voluptate
-    excepturi natus non. In pariatur ex voluptatibus voluptatum. Eligendi nemo necessitatibus
-    vel quis in aut.
+  name: Bradly Klein
+  biography: Laboriosam molestias nihil id et id sed asperiores. Repudiandae omnis
+    culpa beatae voluptas vel deleniti deserunt. Nulla ad nihil blanditiis molestias
+    temporibus illum. Repellendus excepturi ad inventore quae cupiditate et unde exercitationem.
+    Adipisci necessitatibus aperiam autem ullam modi omnis vel.
 - &2 !ruby/object:Author
-  name: Casey Lowe
-  biography: Rerum omnis placeat laborum hic voluptas et. Voluptatibus mollitia voluptatum
-    exercitationem voluptatem accusantium dolorem voluptatem. Deleniti sed natus sed
-    ut. Quibusdam qui quia tempore est ducimus quos.
+  name: Valda Feest
+  biography: Ut hic animi eos ex vitae cum sequi temporibus. Odit quo qui illum dolorem
+    officia. Illum laboriosam quos perferendis id.
 - &3 !ruby/object:Author
-  name: Antonia Abernathy
-  biography: Ea reprehenderit molestiae et enim minus. Adipisci et soluta a praesentium
-    ea omnis. Quo corrupti qui quae est minima animi commodi.
+  name: Wilbert Altenwerth
+  biography: Magni neque et nemo nihil et magnam non. Doloremque dolore reprehenderit
+    sint qui voluptatibus. In quia odio nostrum et.
 - &4 !ruby/object:Author
-  name: Alethia Grimes
-  biography: In minus est accusantium aut voluptas voluptatem. Et incidunt magni alias
-    et adipisci numquam. Omnis molestiae quia vero culpa. Possimus nam dolor molestias
-    dolore enim ipsam. Vitae autem quasi esse incidunt deleniti nemo in.
+  name: Freddy Bahringer
+  biography: Inventore soluta qui et sit aperiam. Quia et dignissimos at earum veritatis.
+    Autem repellat dolorem et necessitatibus vitae quam at. Molestiae dicta provident
+    sequi ipsa ea vel quis. Ab aut odit eum numquam est laborum.
 - &5 !ruby/object:Author
-  name: Ninfa Casper
-  biography: At sint qui dolores earum. Porro quidem dignissimos facilis officia molestias
-    vel eius qui. Atque et aut cumque ratione vitae rem. Id qui ea aut est.
-- &6 !ruby/object:Author
-  name: Terisa Dickinson
-  biography: Dolores veritatis voluptate quisquam non nisi nihil. Itaque pariatur
-    ullam occaecati expedita aut. Et doloremque maxime voluptates in velit.
+  name: Leann Rolfson
+  biography: Tempora vero minima ipsa aut voluptate suscipit dolores. Qui iure ea
+    non cupiditate. Corporis eum iste possimus perspiciatis. Nobis vel totam voluptate
+    consectetur qui. Quae quia et quasi ea.
 books:
-- &7 !ruby/object:Book
-  title: Forbidden Brains
+- &6 !ruby/object:Book
+  title: Return of the Bloody Clash
   author: *1
-- &9 !ruby/object:Book
-  title: Death Friday
+- &8 !ruby/object:Book
+  title: Fake City
   author: *2
-- &16 !ruby/object:Book
-  title: Champagne World
+- &15 !ruby/object:Book
+  title: Tokyo Identity
   author: *3
-- &12 !ruby/object:Book
-  title: Danger Brain
+- &11 !ruby/object:Book
+  title: Planet of the Fake Tentacle
   author: *4
-- &14 !ruby/object:Book
-  title: Electric World
+- &13 !ruby/object:Book
+  title: Planet of the Dangerous Thief
   author: *5
-- !ruby/object:Book
-  title: American Thief
-  author: *6
 readers:
-- &8 !ruby/object:Reader
-  name: Milagros Ryan
-  email: octavia.fritsch@metz.biz
-  city: Tinyport
-  street: Petrina Radial
-  house: 9828
+- &7 !ruby/object:Reader
+  name: Elenore Ritchie
+  email: casandra@fay.co.uk
+  city: West Kristelborough
+  street: Gerlach Expressway
+  house: 215
+- &9 !ruby/object:Reader
+  name: Monte Williamson
+  email: rosaria@stromanlegros.com
+  city: New Annettabury
+  street: Gwendolyn Rest
+  house: 947
 - &10 !ruby/object:Reader
-  name: Jena Powlowski
-  email: mitzi@wiegandhackett.com
-  city: Kindraburgh
-  street: Williamson Square
-  house: 9739
-- &11 !ruby/object:Reader
-  name: Roberto Willms
-  email: lisette_stokes@rogahn.co.uk
-  city: Sauerview
-  street: Turner Grove
-  house: 58880
-- &15 !ruby/object:Reader
-  name: Judson Weissnat
-  email: cortez@wisozk.ca
-  city: Bentontown
-  street: Nella Land
-  house: 397
-- &13 !ruby/object:Reader
-  name: Brigette Sanford
-  email: cordell@roob.name
-  city: Mohrmouth
-  street: King Wall
-  house: 422
-- !ruby/object:Reader
-  name: Bobbi Kuhic
-  email: jeanelle_boehm@hilpertpagac.biz
-  city: Lake Sparkle
-  street: Mathew Shoal
-  house: 1606
+  name: Monserrate Kirlin
+  email: birdie@goldner.info
+  city: Macejkovicview
+  street: Deb Shore
+  house: 929
+- &14 !ruby/object:Reader
+  name: Delores Gislason
+  email: olivia@pfeffer.ca
+  city: East Mindi
+  street: White Cliff
+  house: 4487
+- &12 !ruby/object:Reader
+  name: Stacy Harris
+  email: julissa.dickinson@reichertgleichner.biz
+  city: New Cletusstad
+  street: Juan Park
+  house: 6549
 orders:
 - !ruby/object:Order
-  book: *7
-  reader: *8
-  date: 2018-11-17 20:29:38.103821891 +02:00
+  book: *6
+  reader: *7
+  date: 2018-11-18 16:55:00.933107041 +02:00
 - !ruby/object:Order
-  book: *9
+  book: *8
+  reader: *9
+  date: 2018-11-18 16:55:00.933118952 +02:00
+- !ruby/object:Order
+  book: *6
   reader: *10
-  date: 2018-11-17 20:29:38.103835082 +02:00
+  date: 2018-11-18 16:55:00.933123041 +02:00
 - !ruby/object:Order
-  book: *7
-  reader: *11
-  date: 2018-11-17 20:29:38.103839616 +02:00
-- !ruby/object:Order
-  book: *12
-  reader: *11
-  date: 2018-11-17 20:29:38.103842627 +02:00
-- !ruby/object:Order
-  book: *12
+  book: *11
   reader: *10
-  date: 2018-11-17 20:29:38.103846177 +02:00
+  date: 2018-11-18 16:55:00.933147240 +02:00
 - !ruby/object:Order
-  book: *12
-  reader: *13
-  date: 2018-11-17 20:29:38.103849187 +02:00
+  book: *11
+  reader: *9
+  date: 2018-11-18 16:55:00.933150039 +02:00
 - !ruby/object:Order
-  book: *9
-  reader: *10
-  date: 2018-11-17 20:29:38.103851945 +02:00
+  book: *11
+  reader: *12
+  date: 2018-11-18 16:55:00.933153644 +02:00
 - !ruby/object:Order
-  book: *14
-  reader: *15
-  date: 2018-11-17 20:29:38.103854810 +02:00
+  book: *8
+  reader: *9
+  date: 2018-11-18 16:55:00.933156263 +02:00
 - !ruby/object:Order
-  book: *16
-  reader: *8
-  date: 2018-11-17 20:29:38.103857612 +02:00
+  book: *13
+  reader: *14
+  date: 2018-11-18 16:55:00.933158842 +02:00
 - !ruby/object:Order
-  book: *14
-  reader: *10
-  date: 2018-11-17 20:29:38.103860391 +02:00
+  book: *15
+  reader: *7
+  date: 2018-11-18 16:55:00.933161384 +02:00
+- !ruby/object:Order
+  book: *13
+  reader: *9
+  date: 2018-11-18 16:55:00.933163938 +02:00

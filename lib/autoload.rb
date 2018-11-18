@@ -1,3 +1,4 @@
+require 'time'
 require './validation.rb'
 require './db.rb'
 require './library.rb'

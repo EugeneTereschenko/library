@@ -18,10 +18,14 @@ class Reader
   end
 
   def validate
+    validate_object(@name, String)
+    validate_object(@email, String)
+    validate_object(@city, String)
+    validate_object(@street, String)    
+    validate_object(@house, Integer)
     validate_string(@name)
     validate_string(@email)
     validate_string(@city)
     validate_string(@street)
-    validate_object(@house, Integer)
   end
 end

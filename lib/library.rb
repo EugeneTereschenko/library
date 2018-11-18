@@ -40,9 +40,7 @@ class Library
     popular_books = most_popular_books(quantity).keys
 
     books_orders = @orders.select { |order| popular_books.include?(order.book) }
-    reader_book_num = Hash.new(0)
 
-    books_orders.each { |order| reader_book_num[order.book] += 1 }
-    reader_book_num.values
+    books_orders.group_by(&:book).transform_values(&:count).values
   end
 end

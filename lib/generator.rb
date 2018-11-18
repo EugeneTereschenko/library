@@ -1,7 +1,5 @@
-require 'time'
-
-
 class Generator
+
   attr_reader :authors, :books, :readers, :orders
 
   def initialize(library_data)
@@ -14,7 +12,7 @@ class Generator
 
   def generate
 
-    for i in 0..5
+    5.times do |time|
      r = Reader.new(name: FFaker::Name.name, email: FFaker::Internet.email, city: FFaker::Address.city, street: FFaker::Address.street_name, house: FFaker::Address.building_number.to_i)
       @readers << r
      a = Author.new(name: FFaker::Book.author, biography: FFaker::Book.description)

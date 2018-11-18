@@ -2,19 +2,15 @@ class Db
   DEFAULT_PATH_TO_FILE = 'database.yml'.freeze
 
   def initialize(path_to_file)
-   if path_to_file.empty?  
-      @path_to_file = DEFAULT_PATH_TO_FILE
-   else
-      @path_to_file = path_to_file
-   end
+    @path_to_file = if path_to_file.empty?
+                      DEFAULT_PATH_TO_FILE
+                    else
+                      path_to_file
+                    end
   end
 
   def read_database
-    if File.exist?(@path_to_file)
-      YAML.load_file(@path_to_file, nil)
-    else
-      nil
-    end
+    YAML.load_file(@path_to_file, nil) if File.exist?(@path_to_file)
   end
 
   def write_database(library)
