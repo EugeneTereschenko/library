@@ -1,114 +1,115 @@
 --- !ruby/object:Library
 authors:
 - &1 !ruby/object:Author
-  name: Bradly Klein
-  biography: Laboriosam molestias nihil id et id sed asperiores. Repudiandae omnis
-    culpa beatae voluptas vel deleniti deserunt. Nulla ad nihil blanditiis molestias
-    temporibus illum. Repellendus excepturi ad inventore quae cupiditate et unde exercitationem.
-    Adipisci necessitatibus aperiam autem ullam modi omnis vel.
+  name: Kylee Harvey
+  biography: Et deserunt quaerat sit et quae. Qui sint porro debitis velit est. Facere
+    libero vel dolorem quia sequi ut blanditiis.
 - &2 !ruby/object:Author
-  name: Valda Feest
-  biography: Ut hic animi eos ex vitae cum sequi temporibus. Odit quo qui illum dolorem
-    officia. Illum laboriosam quos perferendis id.
+  name: Kandice Weissnat
+  biography: Sunt et doloremque et sit quaerat perspiciatis debitis consequuntur.
+    Cumque quidem est eum ut delectus. Ut perferendis id quod nesciunt autem dolor
+    odio quam. Aut molestias rerum doloribus quaerat. Commodi et earum quibusdam perspiciatis
+    repudiandae quo dicta.
 - &3 !ruby/object:Author
-  name: Wilbert Altenwerth
-  biography: Magni neque et nemo nihil et magnam non. Doloremque dolore reprehenderit
-    sint qui voluptatibus. In quia odio nostrum et.
+  name: Treva Schulist
+  biography: Ea impedit laudantium suscipit voluptatem exercitationem dolorem quia
+    quia. Inventore id non nihil qui alias et. Aspernatur rerum voluptatem incidunt
+    aliquam.
 - &4 !ruby/object:Author
-  name: Freddy Bahringer
-  biography: Inventore soluta qui et sit aperiam. Quia et dignissimos at earum veritatis.
-    Autem repellat dolorem et necessitatibus vitae quam at. Molestiae dicta provident
-    sequi ipsa ea vel quis. Ab aut odit eum numquam est laborum.
+  name: Rozella Schinner
+  biography: Impedit in vero veritatis dolores ipsum commodi. Ut quia ipsa officiis
+    cupiditate mollitia nihil. Tenetur dolor tempore dolorum id sed recusandae corrupti
+    iste.
 - &5 !ruby/object:Author
-  name: Leann Rolfson
-  biography: Tempora vero minima ipsa aut voluptate suscipit dolores. Qui iure ea
-    non cupiditate. Corporis eum iste possimus perspiciatis. Nobis vel totam voluptate
-    consectetur qui. Quae quia et quasi ea.
+  name: Katharyn Ankunding
+  biography: Aut ducimus rerum rerum et quia vel voluptas. Voluptas suscipit beatae
+    iusto explicabo at doloribus molestias. Officia voluptatem sunt itaque illo est
+    ipsam esse adipisci.
 books:
 - &6 !ruby/object:Book
-  title: Return of the Bloody Clash
+  title: Forbidden Fly
   author: *1
 - &8 !ruby/object:Book
-  title: Fake City
+  title: Bloody Tears
   author: *2
 - &15 !ruby/object:Book
-  title: Tokyo Identity
+  title: Time of the Tokyo Monster
   author: *3
 - &11 !ruby/object:Book
-  title: Planet of the Fake Tentacle
+  title: I am Hungry Fly
   author: *4
 - &13 !ruby/object:Book
-  title: Planet of the Dangerous Thief
+  title: Fake Brains
   author: *5
 readers:
 - &7 !ruby/object:Reader
-  name: Elenore Ritchie
-  email: casandra@fay.co.uk
-  city: West Kristelborough
-  street: Gerlach Expressway
-  house: 215
+  name: Wai Hickle
+  email: tobie.marvin@rowe.co.uk
+  city: Lake Nathanial
+  street: Elizebeth Center
+  house: 81620
 - &9 !ruby/object:Reader
-  name: Monte Williamson
-  email: rosaria@stromanlegros.com
-  city: New Annettabury
-  street: Gwendolyn Rest
-  house: 947
+  name: Tajuana Cummings
+  email: evangeline_langosh@mosciskiluettgen.ca
+  city: West Venessaborough
+  street: Emerald Landing
+  house: 950
 - &10 !ruby/object:Reader
-  name: Monserrate Kirlin
-  email: birdie@goldner.info
-  city: Macejkovicview
-  street: Deb Shore
-  house: 929
+  name: Jetta Kiehn
+  email: antonio_mosciski@kunde.co.uk
+  city: North Hilarioborough
+  street: Kilback Estate
+  house: 7457
 - &14 !ruby/object:Reader
-  name: Delores Gislason
-  email: olivia@pfeffer.ca
-  city: East Mindi
-  street: White Cliff
-  house: 4487
+  name: Towanda Hudson
+  email: woodrow@roberts.name
+  city: North Yaeko
+  street: Karen Glens
+  house: 251
 - &12 !ruby/object:Reader
-  name: Stacy Harris
-  email: julissa.dickinson@reichertgleichner.biz
-  city: New Cletusstad
-  street: Juan Park
-  house: 6549
+  name: Chae Schoen
+  email: cinda_kuhic@gutkowski.biz
+  city: South Chantemouth
+  street: Gutkowski Lodge
+  house: 88
 orders:
 - !ruby/object:Order
   book: *6
   reader: *7
-  date: 2018-11-18 16:55:00.933107041 +02:00
+  date: 2018-11-19 16:42:06.512129647 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-18 16:55:00.933118952 +02:00
+  date: 2018-11-19 16:42:06.512146475 +02:00
 - !ruby/object:Order
   book: *6
   reader: *10
-  date: 2018-11-18 16:55:00.933123041 +02:00
+  date: 2018-11-19 16:42:06.512151418 +02:00
 - !ruby/object:Order
   book: *11
   reader: *10
-  date: 2018-11-18 16:55:00.933147240 +02:00
+  date: 2018-11-19 16:42:06.512155078 +02:00
 - !ruby/object:Order
   book: *11
   reader: *9
-  date: 2018-11-18 16:55:00.933150039 +02:00
+  date: 2018-11-19 16:42:06.512158833 +02:00
 - !ruby/object:Order
   book: *11
   reader: *12
-  date: 2018-11-18 16:55:00.933153644 +02:00
+  date: 2018-11-19 16:42:06.512162276 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-18 16:55:00.933156263 +02:00
+  date: 2018-11-19 16:42:06.512165587 +02:00
 - !ruby/object:Order
   book: *13
   reader: *14
-  date: 2018-11-18 16:55:00.933158842 +02:00
+  date: 2018-11-19 16:42:06.512168923 +02:00
 - !ruby/object:Order
   book: *15
   reader: *7
-  date: 2018-11-18 16:55:00.933161384 +02:00
+  date: 2018-11-19 16:42:06.512172308 +02:00
 - !ruby/object:Order
   book: *13
   reader: *9
-  date: 2018-11-18 16:55:00.933163938 +02:00
+  date: 2018-11-19 16:42:06.512175471 +02:00
