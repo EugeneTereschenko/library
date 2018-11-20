@@ -17,11 +17,10 @@ class Reader
   end
 
   def validate
-   [@name, @email, @city, @street].each do |param|
-    validate_object(param, String)
-    validate_string(param)
+    [@name, @email, @city, @street].each do |param|
+      validate_object(param, String)
+      validate_string(param)
     end
     validate_object(@house, Integer)
   end
-
 end
