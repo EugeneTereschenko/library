@@ -15,8 +15,8 @@ class Author
 
   def validate
     validate_object(@name, String)
-    validate_object(@biography, String) unless @biography.nil?
+    validate_object(@biography, String) if @biography
     validate_string(@name)
-    validate_string(@biography) unless @biography.nil?
+    validate_string(@biography) if @biography
   end
 end

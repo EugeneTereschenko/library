@@ -1,5 +1,5 @@
 class Db
-  DEFAULT_PATH_TO_FILE = 'database.yml'.freeze
+  DEFAULT_PATH_TO_FILE = './../data/database.yml'.freeze
 
   def initialize(path_to_file)
     @path_to_file = if path_to_file.empty?
