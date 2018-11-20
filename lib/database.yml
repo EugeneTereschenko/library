@@ -1,115 +1,115 @@
 --- !ruby/object:Library
 authors:
 - &1 !ruby/object:Author
-  name: Kylee Harvey
-  biography: Et deserunt quaerat sit et quae. Qui sint porro debitis velit est. Facere
-    libero vel dolorem quia sequi ut blanditiis.
+  name: Tatum Leffler
+  biography: Distinctio sint autem asperiores voluptatibus magni aut eos. Cumque aliquid
+    officiis est incidunt consequatur non. Rem et excepturi qui sed officia non occaecati
+    quia. Tempore aut rerum et sit maxime vel omnis.
 - &2 !ruby/object:Author
-  name: Kandice Weissnat
-  biography: Sunt et doloremque et sit quaerat perspiciatis debitis consequuntur.
-    Cumque quidem est eum ut delectus. Ut perferendis id quod nesciunt autem dolor
-    odio quam. Aut molestias rerum doloribus quaerat. Commodi et earum quibusdam perspiciatis
-    repudiandae quo dicta.
+  name: Delfina Fahey
+  biography: Eum sint distinctio delectus beatae. Debitis ut aliquid commodi aperiam
+    optio. Adipisci iusto voluptatem odit consequuntur. Dolore in hic maxime fugit
+    autem sed temporibus.
 - &3 !ruby/object:Author
-  name: Treva Schulist
-  biography: Ea impedit laudantium suscipit voluptatem exercitationem dolorem quia
-    quia. Inventore id non nihil qui alias et. Aspernatur rerum voluptatem incidunt
-    aliquam.
+  name: Latonya Erdman
+  biography: Dicta ea corrupti suscipit neque veniam porro dolorem. Quam ea aut id
+    sed. At maxime quo quo aperiam consequatur molestiae nam. Autem omnis fugit voluptas
+    assumenda id. Tempora voluptatem eius ea officia doloribus.
 - &4 !ruby/object:Author
-  name: Rozella Schinner
-  biography: Impedit in vero veritatis dolores ipsum commodi. Ut quia ipsa officiis
-    cupiditate mollitia nihil. Tenetur dolor tempore dolorum id sed recusandae corrupti
-    iste.
+  name: Cruz Cole
+  biography: Consequatur nisi sit praesentium esse ut quisquam. Atque voluptate eos
+    incidunt ut. Dignissimos est ipsum ducimus quia totam rerum fugit minus. Eum consequatur
+    aut laboriosam non error soluta libero commodi. Quo eligendi maxime minima velit.
 - &5 !ruby/object:Author
-  name: Katharyn Ankunding
-  biography: Aut ducimus rerum rerum et quia vel voluptas. Voluptas suscipit beatae
-    iusto explicabo at doloribus molestias. Officia voluptatem sunt itaque illo est
-    ipsam esse adipisci.
+  name: Evangelina Rowe
+  biography: Et pariatur et porro distinctio doloremque consequatur ut. Ipsam eum
+    quos velit minus velit itaque. Ut aut voluptatem autem rerum qui voluptatem et
+    voluptatem. Architecto aut quaerat facere aliquam.
 books:
 - &6 !ruby/object:Book
-  title: Forbidden Fly
+  title: Season of the Tokyo Tentacle
   author: *1
 - &8 !ruby/object:Book
-  title: Bloody Tears
+  title: Nuclear Ninjas
   author: *2
 - &15 !ruby/object:Book
-  title: Time of the Tokyo Monster
+  title: Dangerous Woman
   author: *3
 - &11 !ruby/object:Book
-  title: I am Hungry Fly
+  title: War of the Nuclear Clash
   author: *4
 - &13 !ruby/object:Book
-  title: Fake Brains
+  title: Tokyo Thief
   author: *5
 readers:
 - &7 !ruby/object:Reader
-  name: Wai Hickle
-  email: tobie.marvin@rowe.co.uk
-  city: Lake Nathanial
-  street: Elizebeth Center
-  house: 81620
+  name: Jonas Jakubowski
+  email: cindi@smith.biz
+  city: Gregmouth
+  street: Klein Valleys
+  house: 17895
 - &9 !ruby/object:Reader
-  name: Tajuana Cummings
-  email: evangeline_langosh@mosciskiluettgen.ca
-  city: West Venessaborough
-  street: Emerald Landing
-  house: 950
+  name: Gale Bailey
+  email: marquerite@corwin.co.uk
+  city: Marquisland
+  street: Coral Squares
+  house: 5174
 - &10 !ruby/object:Reader
-  name: Jetta Kiehn
-  email: antonio_mosciski@kunde.co.uk
-  city: North Hilarioborough
-  street: Kilback Estate
-  house: 7457
+  name: Dong Homenick
+  email: brinda_bernhard@padberg.name
+  city: South Talisha
+  street: Laurie Viaduct
+  house: 1063
 - &14 !ruby/object:Reader
-  name: Towanda Hudson
-  email: woodrow@roberts.name
-  city: North Yaeko
-  street: Karen Glens
-  house: 251
+  name: Leota Hyatt
+  email: chana_huel@kovacek.ca
+  city: McGlynnport
+  street: Joe Junction
+  house: 6790
 - &12 !ruby/object:Reader
-  name: Chae Schoen
-  email: cinda_kuhic@gutkowski.biz
-  city: South Chantemouth
-  street: Gutkowski Lodge
-  house: 88
+  name: Elin Waelchi
+  email: blythe_volkman@steuber.us
+  city: Batzhaven
+  street: Jodi Throughway
+  house: 66
 orders:
 - !ruby/object:Order
   book: *6
   reader: *7
-  date: 2018-11-19 16:42:06.512129647 +02:00
+  date: 2018-11-20 14:13:49.445414743 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-19 16:42:06.512146475 +02:00
+  date: 2018-11-20 14:13:49.445430474 +02:00
 - !ruby/object:Order
   book: *6
   reader: *10
-  date: 2018-11-19 16:42:06.512151418 +02:00
+  date: 2018-11-20 14:13:49.445436501 +02:00
 - !ruby/object:Order
   book: *11
   reader: *10
-  date: 2018-11-19 16:42:06.512155078 +02:00
+  date: 2018-11-20 14:13:49.445441613 +02:00
 - !ruby/object:Order
   book: *11
   reader: *9
-  date: 2018-11-19 16:42:06.512158833 +02:00
+  date: 2018-11-20 14:13:49.445450320 +02:00
 - !ruby/object:Order
   book: *11
   reader: *12
-  date: 2018-11-19 16:42:06.512162276 +02:00
+  date: 2018-11-20 14:13:49.445456209 +02:00
 - !ruby/object:Order
   book: *8
   reader: *9
-  date: 2018-11-19 16:42:06.512165587 +02:00
+  date: 2018-11-20 14:13:49.445460924 +02:00
 - !ruby/object:Order
   book: *13
   reader: *14
-  date: 2018-11-19 16:42:06.512168923 +02:00
+  date: 2018-11-20 14:13:49.445465205 +02:00
 - !ruby/object:Order
   book: *15
   reader: *7
-  date: 2018-11-19 16:42:06.512172308 +02:00
+  date: 2018-11-20 14:13:49.445469638 +02:00
 - !ruby/object:Order
   book: *13
   reader: *9
-  date: 2018-11-19 16:42:06.512175471 +02:00
+  date: 2018-11-20 14:13:49.445473953 +02:00
